@@ -1,0 +1,36 @@
+.header {
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  color: #111827;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: #111827;
+}
+
