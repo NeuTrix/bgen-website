@@ -1,4 +1,20 @@
 services:
+  app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+      DATABASE_URL: postgresql://bgen_user:bgen_password@db:5432/bgen_webapp
+    volumes:
+      - .:/app
+      - app-node-modules:/app/node_modules
+      - app-next-cache:/app/.next
+    command: npm run dev -- -H 0.0.0.0 -p 3000
+
   db:
     image: postgres:16
     restart: unless-stopped
@@ -13,4 +29,6 @@ services:
 
 volumes:
   postgres-data:
+  app-node-modules:
+  app-next-cache:
 
