@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/michaelwalker/2026-Applications/bgen-webpage/app/globals.css"],"sourcesContent":["*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n  background-color: #f9fafb;\n  color: #111827;\n}\n\nbody {\n  min-height: 100vh;\n}\n\nmain {\n  min-height: calc(100vh - 56px);\n}\n\na {\n  color: inherit;\n}\n\n"],"names":[],"mappings":"AAAA;;;;AAMA;;;;;;;;AASA;;;;AAIA;;;;AAIA"}},
-    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["file:///Users/michaelwalker/2026-Applications/bgen-webpage/app/components/NavBar.module.css"],"sourcesContent":[".header {\n  border-bottom: 1px solid #e5e7eb;\n  background-color: #ffffff;\n}\n\n.inner {\n  max-width: 960px;\n  margin: 0 auto;\n  padding: 0.75rem 1rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 1.5rem;\n}\n\n.brand {\n  font-weight: 700;\n  text-decoration: none;\n  color: #111827;\n}\n\n.nav {\n  display: flex;\n  gap: 1rem;\n}\n\n.link {\n  text-decoration: none;\n  color: #374151;\n  font-weight: 500;\n}\n\n.link:hover {\n  color: #111827;\n}\n\n"],"names":[],"mappings":"AAAA;;;;;AAKA;;;;;;;;;;AAUA;;;;;;AAMA;;;;;AAKA;;;;;;AAMA"}}]
-}
