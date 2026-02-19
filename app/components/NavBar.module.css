@@ -1,12 +1,16 @@
 .header {
-  border-bottom: 1px solid #e5e7eb;
-  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--border);
+  background: rgba(11, 15, 23, 0.72);
+  backdrop-filter: blur(10px);
 }
 
 .inner {
-  max-width: 960px;
+  max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0.75rem 1rem;
+  padding: 1.05rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,23 +18,44 @@
 }
 
 .brand {
-  font-weight: 700;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.15rem;
   text-decoration: none;
-  color: #111827;
+  color: var(--text);
+  line-height: 1;
+}
+
+.brandTop {
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  font-size: 1.05rem;
+}
+
+.brandBottom {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 .nav {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.9rem;
 }
 
 .link {
   text-decoration: none;
-  color: #374151;
-  font-weight: 500;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 0.45rem 0.55rem;
+  border-radius: 999px;
 }
 
 .link:hover {
-  color: #111827;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
 }
 

@@ -1,16 +1,17 @@
 .container {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 2.25rem 1.25rem 3.25rem;
 }
 
 .container h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: clamp(2.25rem, 3.2vw, 3.25rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
 }
 
 .container p {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
+  margin: 0 0 0.9rem;
+  line-height: 1.65;
 }
 

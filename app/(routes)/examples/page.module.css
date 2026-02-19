@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 2.25rem 0 1rem;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+}
+
+.title {
+  margin: 0.9rem 0 0.35rem;
+  font-size: clamp(2.2rem, 3vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.subhead {
+  margin: 0;
+  max-width: 70ch;
+}
+
+.section {
+  margin-top: 1.25rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.listItem {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 0.95rem;
+}
+
+.itemTitle {
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+
+.itemDesc {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.55;
+}
+

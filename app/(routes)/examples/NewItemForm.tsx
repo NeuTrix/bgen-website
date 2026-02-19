@@ -2,6 +2,8 @@
 
 import { FormEvent, useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
+import { Button } from '@/app/components/Button';
+import styles from './NewItemForm.module.css';
 
 export function NewItemForm() {
   const router = useRouter();
@@ -49,34 +51,40 @@ export function NewItemForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>
+    <form onSubmit={handleSubmit} className={styles.form}>
+      <div className={styles.row}>
+        <label className={styles.label} htmlFor="title">
           Title
-          <br />
-          <input
-            type="text"
-            value={title}
-            onChange={(event) => setTitle(event.target.value)}
-            required
-          />
         </label>
+        <input
+          id="title"
+          className={styles.input}
+          type="text"
+          value={title}
+          onChange={(event) => setTitle(event.target.value)}
+          placeholder="e.g. Product launch checklist"
+          required
+        />
       </div>
-      <div>
-        <label>
+      <div className={styles.row}>
+        <label className={styles.label} htmlFor="description">
           Description (optional)
-          <br />
-          <textarea
-            value={description}
-            onChange={(event) => setDescription(event.target.value)}
-            rows={3}
-          />
         </label>
+        <textarea
+          id="description"
+          className={styles.textarea}
+          value={description}
+          onChange={(event) => setDescription(event.target.value)}
+          rows={3}
+          placeholder="Add a short note…"
+        />
       </div>
-      {error ? <p style={{ color: 'red' }}>{error}</p> : null}
-      <button type="submit" disabled={isPending}>
-        {isPending ? 'Saving...' : 'Add item'}
-      </button>
+      {error ? <p className={styles.error}>{error}</p> : null}
+      <div className={styles.actions}>
+        <Button type="submit" variant="primary" disabled={isPending}>
+          {isPending ? 'Saving…' : 'Add item'}
+        </Button>
+      </div>
     </form>
   );
 }

@@ -1,0 +1,132 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 2.25rem;
+  align-items: start;
+  padding: 2.5rem 0 2.25rem;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+}
+
+.title {
+  margin: 1.15rem 0 0.9rem;
+  font-size: clamp(2.4rem, 4vw, 3.75rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.lede {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  max-width: 56ch;
+}
+
+.heroCtas {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.secondaryLink {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.secondaryLink:hover {
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.heroRight {
+  display: grid;
+  gap: 0.9rem;
+  padding-top: 0.25rem;
+}
+
+.statCard {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.statLabel {
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.78rem;
+  margin-bottom: 0.55rem;
+}
+
+.statValue {
+  font-weight: 750;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.statHint {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.55;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.25rem 1.25rem;
+}
+
+.cardTop {
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.78rem;
+  margin-bottom: 0.6rem;
+}
+
+.cardTitle {
+  margin: 0 0 0.6rem;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+}
+
+.cardBody {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 1.75rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
