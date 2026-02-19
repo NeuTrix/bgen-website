@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Container } from './components/Container';
 import styles from './page.module.css';
 import { ButtonLink } from './components/Button';
@@ -20,9 +19,6 @@ export default function HomePage() {
             <ButtonLink href="/#contact" variant="primary">
               Let’s talk
             </ButtonLink>
-            <Link className={styles.secondaryLink} href="/examples">
-              View examples →
-            </Link>
           </div>
         </div>
 

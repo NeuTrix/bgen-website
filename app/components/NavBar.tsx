@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styles from './NavBar.module.css';
-import { ButtonLink } from './Button';
 
 export function NavBar() {
   return (
@@ -33,9 +32,6 @@ export function NavBar() {
           <Link href="/#contact" className={styles.link}>
             Contact
           </Link>
-          <ButtonLink href="/examples" variant="primary" size="small">
-            Examples
-          </ButtonLink>
         </nav>
       </div>
     </header>
