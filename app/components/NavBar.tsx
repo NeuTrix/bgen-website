@@ -7,8 +7,15 @@ export function NavBar() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link href="/#top" className={styles.brand} aria-label="BrandGeneering">
-          <span className={styles.brandTop}>BrandGeneering</span>
-          <span className={styles.brandBottom}>consulting</span>
+          <img
+            className={styles.logo}
+            src="https://static.wixstatic.com/media/a6f094_9f67b85f529a44b984ac5c78fcefcdf0~mv2_d_1324_1305_s_2.png"
+            alt="BrandGeneering Consulting"
+            width={40}
+            height={40}
+            loading="eager"
+            decoding="async"
+          />
         </Link>
         <nav className={styles.nav}>
           <Link href="/#top" className={styles.link}>

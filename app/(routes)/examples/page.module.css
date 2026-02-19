@@ -9,9 +9,9 @@
 .kicker {
   display: inline-flex;
   align-items: center;
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--muted);
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--bg-elev);
   border-radius: 999px;
   padding: 0.5rem 0.85rem;
   font-weight: 650;
@@ -35,7 +35,7 @@
 .section {
   margin-top: 1.25rem;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
+  background: #ffffff;
   border-radius: var(--radius);
   padding: 1.25rem;
 }
@@ -55,8 +55,8 @@
 }
 
 .listItem {
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
   border-radius: var(--radius-sm);
   padding: 0.9rem 0.95rem;
 }
@@ -68,7 +68,7 @@
 }
 
 .itemDesc {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
   line-height: 1.55;
 }
 

@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <footer
           style={{
             borderTop: '1px solid var(--border)',
-            background: 'rgba(0,0,0,0.15)',
+            background: 'var(--bg)',
           }}
         >
           <div
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <div style={{ fontWeight: 700, letterSpacing: '-0.02em' }}>BrandGeneering</div>
             <a
               href="mailto:consulting@brandgeneering.com"
-              style={{ color: 'rgba(255,255,255,0.78)', textDecoration: 'none', fontWeight: 650 }}
+              style={{ color: 'var(--muted)', textDecoration: 'none', fontWeight: 650 }}
             >
               consulting@brandgeneering.com
             </a>
