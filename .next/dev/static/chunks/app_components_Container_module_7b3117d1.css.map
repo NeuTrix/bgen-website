@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/michaelwalker/2026-Applications/bgen-webpage/app/components/Container.module.css"],"sourcesContent":[".container {\n  max-width: 960px;\n  margin: 2rem auto;\n  padding: 0 1rem;\n}\n\n.container h1 {\n  font-size: 2rem;\n  margin-bottom: 1rem;\n}\n\n.container p {\n  margin-bottom: 0.75rem;\n  line-height: 1.6;\n}\n\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;AAKA"}}]
+}
