@@ -6,19 +6,28 @@ export function NavBar() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <Link href="/" className={styles.brand} aria-label="BrandGeneering">
+        <Link href="/#top" className={styles.brand} aria-label="BrandGeneering">
           <span className={styles.brandTop}>BrandGeneering</span>
           <span className={styles.brandBottom}>consulting</span>
         </Link>
         <nav className={styles.nav}>
-          <Link href="/" className={styles.link}>
+          <Link href="/#top" className={styles.link}>
             Home
           </Link>
-          <Link href="/examples" className={styles.link}>
-            Examples
+          <Link href="/#marketing-strategy" className={styles.link}>
+            Marketing Strategy
           </Link>
-          <ButtonLink href="mailto:consulting@brandgeneering.com" variant="primary" size="small">
+          <Link href="/#technology" className={styles.link}>
+            Technology
+          </Link>
+          <Link href="/#interim-cmo" className={styles.link}>
+            Interim CMO
+          </Link>
+          <Link href="/#contact" className={styles.link}>
             Contact
+          </Link>
+          <ButtonLink href="/examples" variant="primary" size="small">
+            Examples
           </ButtonLink>
         </nav>
       </div>
